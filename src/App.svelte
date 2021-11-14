@@ -1,6 +1,6 @@
 <script>
-  import Title from "./home/title.svelte";
-  import Triangle from "./shape/triangle.svelte";
+  import Title from "./home/Title.svelte";
+  import Triangle from "./shape/Triangle.svelte";
 </script>
 
 <main>
