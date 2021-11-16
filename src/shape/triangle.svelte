@@ -40,7 +40,6 @@
     cursor: pointer;
     transition: 0.5s;
   }
-
   .arrow-down:hover {
     border-left: 250px solid transparent;
     border-right: 250px solid transparent;

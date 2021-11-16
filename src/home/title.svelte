@@ -8,11 +8,8 @@
 
 <style>
   main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 200px;
   }
   h1 {
     font-size: 3rem;
