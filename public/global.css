@@ -14,23 +14,24 @@ body {
   position: relative;
   box-sizing: border-box;
   font-family: "Roboto";
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d3cce3;
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
 }
-/* 
 a {
-  color: rgb(0, 100, 200);
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  text-decoration-color: #797979;
 }
-
 a:visited {
-  color: rgb(0, 80, 160);
+  color: rgb(48, 48, 48);
 }
+/* 
+
 
 label {
   display: block;
