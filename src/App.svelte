@@ -11,6 +11,5 @@
 </main>
 
 <style>
-  main {
-  }
+  /* night code */
 </style>
