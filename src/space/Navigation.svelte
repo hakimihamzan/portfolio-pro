@@ -23,10 +23,12 @@
   .outer {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.3rem;
   }
 
   .m-5 {
     margin: 0 25px;
+    font-size: 2rem;
   }
 </style>
