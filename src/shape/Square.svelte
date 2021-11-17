@@ -9,10 +9,11 @@
 <style>
   main {
     position: absolute;
-    right: -190px;
+    top: -190px;
+    right: 80px;
   }
   div {
-    background-color: teal;
+    background-color: grey;
     width: 250px;
     height: 250px;
   }

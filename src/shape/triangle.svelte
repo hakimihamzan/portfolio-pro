@@ -24,7 +24,7 @@
 </script>
 
 <main>
-  <div id="arrow-down" on:click={changeColor} class="arrow-down" style="border-top: 200px solid #{randomColor};" />
+  <div id="arrow-down" on:click={changeColor} class="arrow-down" />
 </main>
 
 <style>
@@ -35,7 +35,7 @@
     height: 0;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-top: 200px solid transparent;
+    border-top: 200px solid grey;
     transform: rotate(75deg);
     cursor: pointer;
     transition: 0.5s;
