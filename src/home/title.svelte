@@ -1,18 +1,22 @@
 <script></script>
 
 <main>
-  <h1>Hi, my name is Hakimi.</h1>
-  <h1>Please call me Kimi (pronounced Key Me).</h1>
-  <h3>I am software developer</h3>
+  <div>Hi, my name is Hakimi.</div>
+  <div>Please call me Kimi (pronounced Key Me).</div>
+  <div>I am software developer</div>
 </main>
 
 <style>
   main {
-    position: absolute;
-    left: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  h1 {
+  div {
     font-size: 3rem;
     margin: 0;
+    color: rgb(58, 58, 58);
   }
 </style>
