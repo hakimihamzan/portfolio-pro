@@ -6,9 +6,9 @@
 
 <style>
   main {
-    /* width: 100vw;
+    width: 100vw;
     height: 100vh;
     position: absolute;
-    transform: translateX(100vw); */
+    transform: translateX(100vw);
   }
 </style>

@@ -5,12 +5,23 @@
   import Navigation from "./misc/Navigation.svelte";
   import Portfolio from "./portfolio/Portfolio.svelte";
 
+  // ____________Home____________Portfolio____________Contact____________About______________
+  // ____________Home_______________________________________________________________________
+  // ____________________________Portfolio__________________________________________________
+  // _________________________________________________Contact_______________________________
+  // ____________________________________________________________________About______________
+  // If home is active
+  //        Portolio, Contact, About is inactive
+  //        asdfjlksdjlkflkjl
+  // If porfolio is active
+  //        Contact, About, Home is inactive
+  // If contact is active
+  //        About, Home, Portfolio is inactive
+  // If about is active
+  //        Home, Portolio, Contact is inactive
+
   function clickMe() {
-    console.log("clicked");
     document.querySelector(".home").style.transform = `translateX(-100vw)`;
-    // document.querySelector(".porfolio").style.transform = `translateX(-200vw)`;
-    // document.querySelector(".contact").style.transform = `translateX(-300vw)`;
-    // document.querySelector(".about").style.transform = `translateX(-400vw)`;
   }
 </script>
 
@@ -35,9 +46,6 @@
   main {
     width: 100vw;
     height: 100vh;
-    background: #d3cce3;
-    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
-    background: linear-gradient(to right, #e9e4f0, #d3cce3);
   }
   .home {
     transition: transform 1s;
