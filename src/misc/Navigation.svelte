@@ -1,40 +1,40 @@
 <script>
-  let controller = (e) => {
-    e.preventDefault();
-    switch (e.target.hash) {
-      case "#home":
-        {
-          window.location.hash = "#home";
-        }
-        break;
-      case "#portfolio":
-        {
-          window.location.hash = "#portfolio";
-        }
-        break;
-      case "#contact":
-        {
-          window.location.hash = "#contact";
-        }
-        break;
-      case "#about":
-        {
-          window.location.hash = "#about";
-        }
-        break;
-    }
-  };
+  // let controller = (e) => {
+  //   e.preventDefault();
+  //   switch (e.target.hash) {
+  //     case "#home":
+  //       {
+  //         window.location.hash = "#home";
+  //       }
+  //       break;
+  //     case "#portfolio":
+  //       {
+  //         window.location.hash = "#portfolio";
+  //       }
+  //       break;
+  //     case "#contact":
+  //       {
+  //         window.location.hash = "#contact";
+  //       }
+  //       break;
+  //     case "#about":
+  //       {
+  //         window.location.hash = "#about";
+  //       }
+  //       break;
+  //   }
+  // };
 </script>
 
 <main>
   <div class="outer">
-    <a href="#home" on:click={controller}>Home</a>
+    <a href="#home">Home</a>
     <div class="m-5">|</div>
-    <a href="#portfolio" on:click={controller}>Portfolio</a>
+    <a href="#portfolio">Portfolio</a>
     <div class="m-5">|</div>
-    <a href="#contact" on:click={controller}>Contact</a>
+    <a href="#contact">Contact</a>
     <div class="m-5">|</div>
-    <a href="#about" on:click={controller}>About</a>
+    <a href="#about">About</a>
   </div>
 </main>
 
