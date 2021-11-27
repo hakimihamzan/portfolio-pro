@@ -5,9 +5,9 @@
 </script>
 
 <main>
-  <Triangle />
+  <!-- <Triangle /> -->
   <Title />
-  <Square />
+  <!-- <Square /> -->
 </main>
 
 <style>
