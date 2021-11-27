@@ -5,6 +5,43 @@
   import Navigation from "./misc/Navigation.svelte";
   import Portfolio from "./portfolio/Portfolio.svelte";
 
+  function removeClass() {
+    let allTag = document.querySelectorAll(".aTag");
+    allTag.forEach((eachNode, v) => eachNode.classList.remove("disLink"));
+  }
+
+  window.onhashchange = () => {
+    switch (location.hash) {
+      case "#home":
+        {
+          removeClass();
+          document.querySelector(".aTag.Home").classList.add("disLink");
+        }
+        break;
+      case "#portfolio":
+        {
+          removeClass();
+          console.log("portfolio is active");
+          document.querySelector(".aTag.Portfolio").classList.add("disLink");
+        }
+        break;
+      case "#contact":
+        {
+          removeClass();
+          console.log("contact is active");
+          document.querySelector(".aTag.Contact").classList.add("disLink");
+        }
+        break;
+      case "#about":
+        {
+          removeClass();
+          console.log("about is active");
+          document.querySelector(".aTag.About").classList.add("disLink");
+        }
+        break;
+    }
+  };
+
   // ____________Home____________Portfolio____________Contact____________About______________
   // ____________Home_______________________________________________________________________
   // ____________________________Portfolio__________________________________________________
@@ -20,26 +57,29 @@
   // If about is active
   //        Home, Portolio, Contact is inactive
 
-  function clickMe() {
-    document.querySelector(".home").style.transform = `translateX(-100vw)`;
-  }
+  // function clickMe() {
+  //   document.querySelector(".home").style.transform = `translateX(-100vw)`;
+  // }
 </script>
 
 <main>
-  <div class="home">
-    <Home />
+  <div class="home"><Home /></div>
+  <!-- <div class="porfolio"><Portfolio /></div>
+  <div class="contact"><Contact /></div>
+  <div class="about"><About /></div> -->
+  <!-- <Navigation /> -->
+  <!-- <button on:click={clickMe}>click</button> -->
+
+  <!-- Bottom Navigation -->
+  <div class="outer">
+    <a href="#home" class="aTag Home disLink">Home</a>
+    <div class="m-5">|</div>
+    <a href="#portfolio" class="aTag Portfolio">Portfolio</a>
+    <div class="m-5">|</div>
+    <a href="#contact" class="aTag Contact">Contact</a>
+    <div class="m-5">|</div>
+    <a href="#about" class="aTag About">About</a>
   </div>
-  <div class="porfolio">
-    <Portfolio />
-  </div>
-  <div class="contact">
-    <Contact />
-  </div>
-  <div class="about">
-    <About />
-  </div>
-  <Navigation />
-  <button on:click={clickMe}>click</button>
 </main>
 
 <style>
@@ -50,9 +90,20 @@
   .home {
     transition: transform 1s;
   }
-  button {
-    position: fixed;
-    top: 0;
-    left: 500px;
+  .outer {
+    position: absolute;
+    width: 100vw;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .m-5 {
+    margin: 0 40px;
+    font-size: 2rem;
+  }
+  .aTag {
+    width: 100px;
   }
 </style>
