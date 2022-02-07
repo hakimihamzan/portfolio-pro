@@ -72,13 +72,13 @@
 
   <!-- Bottom Navigation -->
   <div class="outer">
-    <a href="#home" class="aTag Home disLink">Home</a>
-    <div class="m-5">|</div>
-    <a href="#portfolio" class="aTag Portfolio">Portfolio</a>
-    <div class="m-5">|</div>
-    <a href="#contact" class="aTag Contact">Contact</a>
-    <div class="m-5">|</div>
-    <a href="#about" class="aTag About">About</a>
+    <a href="#home" class="aTag Home disLink"> Home </a>
+    <!-- <div class="m-5"></div> -->
+    <a href="#portfolio" class="aTag Portfolio"> Portfolio </a>
+    <!-- <div class="m-5"></div> -->
+    <a href="#contact" class="aTag Contact"> Contact </a>
+    <!-- <div class="m-5"></div> -->
+    <a href="#about" class="aTag About"> About </a>
   </div>
 </main>
 
@@ -94,16 +94,13 @@
     position: absolute;
     width: 100vw;
     bottom: 10px;
-    display: flex;
+    display: inline-flex;
+  gap: 20px;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
   }
-  .m-5 {
-    margin: 0 40px;
-    font-size: 2rem;
-  }
   .aTag {
-    width: 100px;
+    /* width: 100px; */
   }
 </style>
