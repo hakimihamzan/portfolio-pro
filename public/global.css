@@ -18,7 +18,9 @@ a {
 
 .disLink {
   cursor: not-allowed;
-  padding: 2px 7px;
+  /* padding: 2px 7px;
   border: 1px solid rgb(176, 187, 176);
-  text-decoration: none;
+  text-decoration: none; */
+  text-decoration: underline overline;
+  text-decoration-color: rgb(138, 138, 138);
 }
